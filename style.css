@@ -1,0 +1,37 @@
+.flex-container{
+    display: flex;
+    background-color: #6482AD;
+    flex-direction: column;
+    margin: 100px;
+    margin-top: 00px;
+    height: 450;
+}
+.top-left-panel{
+    display: flex;
+    background-color: #7FA1C3;
+    height: 400px;
+    width: 200px;
+}
+.bottom-left-panel{
+    display: flex;
+    background-color: #E2DAD6;
+    height:50px;
+    width: 200px;
+}
+.header{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.company-title{
+    margin: 0px;
+    font-size: 20px;
+    color: lightslategray;
+}
