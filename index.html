@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
         <img src="https://i.pinimg.com/736x/59/f2/05/59f205bafa1ab348ca8c1281f791b982.jpg" alt="company logo" class="logo">
-        <h4 class="company-title">Company title</h4>
+        <h4 class="company-title">AeroBreeze</h4>
     </div>
-    <div class="flex-container">
-        <div class="top-left-panel"></div>
+    <div class="main-container">
+        <div class="top-left-panel">
+            <div class="user-reg">
+                <h4>Registration</h4>
+                <div class="reg-details">
+                    <form action="#">
+                        <input type="text" id="ufullname" name="ufullname" placeholder="Enter your full name" required aria-label="Full Name"><br>
+                        <input type="email" id="uemail" name="uemail" placeholder="Enter your email" required aria-label="Email"><br>
+                        <input type="password" id="upassword" name="upassword" placeholder="Enter your password" required aria-label="Password"><br>
+                        <input type="password" id="ucpassword" name="ucpassword" placeholder="Confirm password" required aria-label="Confirm Password"><br>
+                        <input type="date" id="udob" name="udob" required aria-label="Date of Birth"><br>
+
+                        <select name="ucountry" id="ucountry" required aria-label="Country">
+                            <option value="" disabled selected>Select a country</option>
+                            <option value="australia">Australia</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="england">England</option>
+                            <option value="india">India</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="united-states">United States</option>
+                        </select><br>
+
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <input type="radio" id="male" value="male" name="ugender" required aria-label="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" value="female" name="ugender" aria-label="Female">
+                            <label for="female">Female</label>
+                        </fieldset><br>
+
+                        <input type="checkbox" id="termandcondition" required aria-label="Terms and Conditions">
+                        <label for="termandcondition"><a href="https://example.com" target="_blank">I agree to the terms.</a></label><br>
+                        <button type="submit" class="reg-button">Register</button>                    </form>
+                </div>
+            </div>
+        </div>
         <div class="bottom-left-panel"></div>
     </div>
 </body>
