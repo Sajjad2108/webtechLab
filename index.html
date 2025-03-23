@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -35,7 +35,10 @@
                             <option value="pakistan">Pakistan</option>
                             <option value="united-states">United States</option>
                         </select><br>
-
+                        <div>
+                            <label for="ucolor" class="color-label">Choose a color:</label>
+                            <input type="color" id="ucolor" name="ucolor" value="#1F3D6B" aria-label="Choose Color"><br>
+                        </div>
                         <fieldset>
                             <legend>Gender</legend>
                             <input type="radio" id="male" value="male" name="ugender" required aria-label="Male">
