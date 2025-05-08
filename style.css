@@ -94,6 +94,12 @@ input:focus {
     cursor: pointer;
     transition: border-color 0.2s ease-in-out;
 }
+.reg-details input[type="date"] {
+    width: 135px;
+}
+.reg-details select{
+    width: 135px;
+}
 .reg-details div input[type="color"]:focus {
     border: 2px solid #d7dddf;
     box-shadow: 0 0 5px rgba(4, 72, 145, 0.5);
@@ -166,6 +172,9 @@ legend {
     text-decoration: underline;
     color: #000000; 
 }
+
+/* STYLE FOR BOTTOM LEFT LOGIN PORTION */
+
 .user-login > h4 {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
     margin-bottom: 15px;
@@ -245,6 +254,9 @@ legend {
     align-items: center;
     width: 100%;
 }
+
+/* STYLE FOR AQI TABLE PORTION */
+
 .aqi-table-container {
     position: absolute;
     top: 45%;
