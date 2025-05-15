@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.outer-container {
+    background: linear-gradient(to bottom right, #4A7BA9, #2A4E75);
+    padding: 40px;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px auto;
+}
+
+.confirm-box {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.confirm-box>h3 {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    margin: 14px auto 15px;
+    position: relative;
+    width: max-content;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.confirm-box>h3::after {
+    content: '';
+    background: linear-gradient(to right, #5DBCD2, #41729F, #1E4171);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-radius: 10px;
+    transition: width 100ms;
+}
+
+.confirm-box>h3:hover::after {
+    width: 0;
+}
+
+.confirm-button {
+    padding: 6px 12px;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #15406e 0%, #031229 100%);
+    cursor: pointer;
+    width: 75px;
+    margin-top: 6px;
+    align-self: flex-start;
+}
+
+.data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    max-width: 260px;
+    width: 100%;
+}
+
+.data-list div {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.data-list span:first-child {
+    font-weight: 600;
+    text-align: right;
+    margin-left: 40px;
+}
+
+.data-list span:last-child {
+    text-align: left;
+}

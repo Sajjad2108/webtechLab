@@ -1,0 +1,37 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS AQI;
+
+-- Use the database
+USE AQI;
+
+-- Create the table with specified columns
+CREATE TABLE IF NOT EXISTS infoAQI (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    city VARCHAR(20),
+    country VARCHAR(20),
+    aqi INT
+);
+
+-- AQI entry for 20 cities
+INSERT INTO infoAQI (city, country, aqi)
+VALUES
+('Dhaka', 'Bangladesh', 255),
+('Lahore', 'Pakistan', 298),
+('Delhi', 'India', 342),
+('New York', 'USA', 78),
+('Toronto', 'Canada', 35),
+('Beijing', 'China', 167),
+('Karachi', 'Pakistan', 287),
+('Mumbai', 'India', 309),
+('Los Angeles', 'USA', 92),
+('Vancouver', 'Canada', 28),
+('Kathmandu', 'Nepal', 182),
+('Cairo', 'Egypt', 205),
+('Jakarta', 'Indonesia', 156),
+('Moscow', 'Russia', 84),
+('Tokyo', 'Japan', 67),
+('Berlin', 'Germany', 42),
+('Paris', 'France', 89),
+('Singapore', 'Singapore', 38),
+('Zurich', 'Switzerland', 12),
+('Helsinki', 'Finland', 15);
